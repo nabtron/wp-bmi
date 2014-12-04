@@ -18,8 +18,8 @@ This widget installed on your blog provide your visitors the option to calculate
 
 How to istall ?
 
-1. Download the plugin from: www.adriangeismaier.dk/apps/plugins/wp-bmi
-2. Upload entire folder "BodyMassIndex" to the "/wp-content/plugins/" directory
+1. Download the plugin
+2. Upload entire folder "wp-bmi" to the "/wp-content/plugins/" directory
 3. Activate the plugin through the "Plugins" menu in WordPress
 4. Go to "Appearance -> Widgets", drag "BMI Widget" and paste it in the place you want it to appear.
 
