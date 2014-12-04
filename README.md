@@ -3,7 +3,7 @@ Contributors: Nabtron
 Donate link: http://nabtron.com/
 Tags: bmi index, body mass index, bmi calculator
 Requires at least: 2.5
-Tested up to: 4.0
+Tested up to: 4.0.1
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -18,7 +18,7 @@ This widget installed on your blog provide your visitors the option to calculate
 
 How to istall ?
 
-1. Download the plugin from: www.adriangeismaier.dk/apps/plugins/BodyMassIndex.zip
+1. Download the plugin
 2. Upload entire folder "BodyMassIndex" to the "/wp-content/plugins/" directory
 3. Activate the plugin through the "Plugins" menu in WordPress
 4. Go to "Appearance -> Widgets", drag "BodyMassIndex" and paste it in the place you want it to appear.
