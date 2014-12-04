@@ -1,16 +1,31 @@
-wpbmi
-=====
+=== Plugin Name ===
+Contributors: Nabtron
+Donate link: http://nabtron.com/
+Tags: bmi index, body mass index, bmi calculator
+Requires at least: 2.5
+Tested up to: 4.0
+Stable tag: 1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-BMI widget plugin for WordPress
+Body Mass Index (BMI) Calculator can be used to indicate if you are overweight, obese, underweight or normal.
 
-The plugin shows a widget to calculate bmi in sidebar, with proper wp widgets control panel availability
+== Description ==
 
-The plugin was coded and working at: http://offlineclinic.com/ however it's not working after wp 4.0 or 4.0.1 upgrade
+This widget installed on your blog provide your visitors the option to calculate their BMI.
 
-Road map:
+== Installation ==
 
-I'll be uploading the the initial plugin file once it get working on latest wp (might be uploading the old plugin file too if i don't get it working though)
+How to istall ?
 
-update
-======
-found the plugin to be working fine on apache but not on nginx! let me dig more! 
+1. Download the plugin from: www.adriangeismaier.dk/apps/plugins/BodyMassIndex.zip
+2. Upload entire folder "BodyMassIndex" to the "/wp-content/plugins/" directory
+3. Activate the plugin through the "Plugins" menu in WordPress
+4. Go to "Appearance -> Widgets", drag "BodyMassIndex" and paste it in the place you want it to appear.
+
+
+
+== Changelog ==
+
+= 1.0 =
+* This is the first version of the Body Mass Index Calculator plugin
