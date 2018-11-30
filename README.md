@@ -3,8 +3,8 @@ Contributors: nabtron
 Donate link: http://nabtron.com/
 Tags: bmi index, body mass index, bmi calculator
 Requires at least: 2.5
-Tested up to: 4.0.1
-Stable tag: 1.0
+Tested up to: 5.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,5 +27,13 @@ How to istall ?
 
 == Changelog ==
 
+= 1.0.1 =
+* Confirmed WordPress 5.0 compatibility
+
 = 1.0 =
 * This is the first version of the WP BMI plugin
+
+== Upgrade Notice ==
+
+= 1.0.1 =
+Confirmed WordPress 5.0 compatibility

@@ -4,15 +4,21 @@ Plugin Name: WP BMI
 Plugin URI: http://nabtron.com/wp-bmi/
 Description: Body Mass Index calculator as a widget on sidebar
 Author: nabtron
-Version: 1.0
+Version: 1.0.1
 Author URI: http://nabtron.com/
 */
 
+function wp_bmi_scripts() {
+    wp_register_style( 'wp-bmi-styles',  plugin_dir_url( __FILE__ ) . 'assets/wp-bmi-styles.css' );
+    wp_enqueue_style( 'wp-bmi-styles' );
+    wp_register_script( 'wp-bmi-js',  plugin_dir_url( __FILE__ ) . 'assets/wp-bmi-js.js' );
+    wp_enqueue_script( 'wp-bmi-js' );
+}
+add_action( 'wp_enqueue_scripts', 'wp_bmi_scripts' );
+
 function wp_bmi_front() 
 {
-  $url=WP_PLUGIN_URL; ?>
-        <link rel="stylesheet" type="text/css" media="all" href="<?php echo $url; ?>/bodymassindex/style.css" />
-
+?>
 <div id="bmi_div">
 <form>
 	<p> <span>height</span> <br />
@@ -32,33 +38,9 @@ function wp_bmi_front()
 		<input type="radio" id="bmi_lb" name="bmi_kglb" value="lbs" onClick="AnEventHasOccurred()">
 		lb </span> </p>
 	<p>Your BMI is : <span id="bmi_result">0</span></p>
-	<p class="bmi_credits">Developed by <a href="http://nabtron.com/" target="_blank">Nabtron</a></p>
 
 </form>
 <script type="text/javascript">
-function AnEventHasOccurred() {
-	
-	var height = document.getElementById("bmi_height").value;
-	var cmsorinches = (document.getElementById("bmi_cms").checked ? 'cms' : (document.getElementById("bmi_inches").checked ? 'inches' : '[neither]') );
-	var weight = document.getElementById("bmi_weight").value;
-	var kglb = (document.getElementById("bmi_kg").checked ? 'kgs' : (document.getElementById("bmi_lb").checked ? 'lbs' : '[neither]') );
-
-	var max_chars = 3;
-    if(height.length > max_chars) {
-        document.getElementById("bmi_height").value = height.substr(0, max_chars);
-    }
-	
-	
-	if(cmsorinches == 'inches') { height = height*2.54; }
-	if(kglb == 'lbs') { weight = weight*0.45359237; }
-	
-	height = height/100; //cm to m
-	var bmi = weight/(height*height);
-	bmi = Math.round(bmi*10)/10
-	
-document.getElementById("bmi_result").innerHTML = bmi;	
-
-}
 </script>
 </div>
 <?php
@@ -79,4 +61,3 @@ function wp_bmi_init()
 }
 
 add_action("plugins_loaded", "wp_bmi_init");
-?>
